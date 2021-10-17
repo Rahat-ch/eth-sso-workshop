@@ -1,0 +1,14 @@
+.button {
+  color: #fff;
+  background-color: #0078e7;
+  padding: 2rem;
+  font-family: sans-serif;
+  width: 80%;
+  margin: 10rem auto;
+  margin-left: 6rem;
+  font-size: x-large;
+}
+
+.container {
+  width: 100vw;
+}
