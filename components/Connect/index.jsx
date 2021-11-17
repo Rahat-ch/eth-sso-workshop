@@ -13,7 +13,7 @@ const ConnectWallet = () => {
             setAccount(accounts[0])
             const provider = new ethers.providers.Web3Provider(ethereum)
             const signer = provider.getSigner()
-            authRequest(account, signer, setLoggedIn)
+            authRequest(accounts[0], signer, setLoggedIn)
         } else {
             console.log('no wallet detected')
         }
