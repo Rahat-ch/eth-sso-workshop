@@ -6,6 +6,11 @@ export default function handler(req, res){
         const newUser = new User(req.query.address)
         users.push(newUser)
         userInfo = users.filter(user => user.address === req.query.address)
-    }
+    } else {
+        const nonce = Math.floor(Math.random() * 10000000)
+        userInfo[0].nonce = nonce
+      }
+    console.log(userInfo[0])
     res.status(200).json(userInfo[0])
 }
+
